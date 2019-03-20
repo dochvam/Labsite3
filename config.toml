@@ -1,0 +1,235 @@
+# Main config file for icon theme.
+theme = "hugo-icon"
+baseURL = "https://www.example.com/"
+languageCode = "en-AU"
+title = "de Valpine Lab"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+publishDir = "docs"
+
+# Metadata
+[params]
+  author = "Ben Goldstein"
+  description = "The lab website for UC Berkeley's de Valpine lab group."
+
+# Hero section (from here on is for icon theme) 
+[params.hero]
+  img = "images/jgmf-mist.jpg"
+  title = "de Valpine Lab"
+  description = "Research Lab in Ecology"
+
+# Navigation section
+[params.nav]
+  mission = "Research"
+  team = "People"
+  services = "Teaching"
+  contact = "Get In Touch"
+  # Include logo instead if HOME:
+  # logo = "path/to/logo"
+
+# Mission section
+[params.mission]
+  enable = true
+
+  [params.mission.images]
+    enable = true
+
+    [[params.mission.images.list]]
+      img = "images/img_3.jpg"
+    [[params.mission.images.list]]
+      img = "images/img_2.jpg"
+    [[params.mission.images.list]]
+      img = "images/img_1.jpg"
+    [[params.mission.images.list]]
+      img = "images/img_4.jpg"
+
+  [[params.mission.item]]
+    weight = 1
+    name = "NIMBLE"
+    title = "NIMBLE"
+    subtitle = "An R package for building and sharing analysis methods for statistical models, especially for hierarchical models and computationally-intensive methods"
+    description = "<p>Hierarchical statistical models have become a widely used approach for incorporating multiple sources of variation into statistical models and customizing models to the particular design and scientific issues of a research project. Some very successful software packages have made available specific flavors of algorithms such as Markov chain Monte Carlo for estimating such models, but there are many more statistical approaches and algorithms (including different MCMC flavors) that are not readily accessible in software for general models. We created NIMBLE to combine flexible model specification with a system embedded within R for programming general algorithms for such models. For more information, please see <a href=r-nimble.org>the NIMBLE web page</a> and our <a href = https://www.tandfonline.com/doi/abs/10.1080/10618600.2016.1172487>paper</a> in the Journal of Computational and Graphical Statistics.</p>"
+
+  [[params.mission.item]]
+    weight = 2
+    name = "analysis"
+    title = "Resources"
+    subtitle = "Quam quasi illum expedita dicta nemo fugit reprehenderit similique! Corporis praesentium magnam sequi."
+    description = "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla explicabo, molestiae eaque fugiat dolores est esse, doloremque placeat assumenda corrupti officia dolorum. Sunt saepe ut, explicabo consectetur, nostrum illo est.</p><ul class='checked'><li>Free HTML5 Templates</li><li>Free Bootstrap Templates</li><li>Free HTML5 Bootstrap Templates</li></ul><p><a href='#' class='btn btn-primary btn-outline fh5co-content-nav' data-nav-section='contact'>Get In Touch</a></p>"
+
+  [[params.mission.item]]
+    weight = 3
+    name = "strategy"
+    title = "Strategy"
+    subtitle = "Magnam iste obcaecati illo laboriosam amet. Dignissimos sed quis voluptatum corporis adipisci amet."
+    description = "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore illum expedita placeat debitis, dignissimos obcaecati et modi. Possimus id dicta consequuntur veritatis, reiciendis at expedita voluptate sint distinctio eligendi!</p><ul class='checked'><li>Web Development</li><li>User Interface Experts</li><li>Pixel Perfect Design</li></ul><p><a href='#' class='btn btn-primary btn-outline fh5co-content-nav' data-nav-section='contact'>Get In Touch</a></p>"
+
+
+# Work section
+[params.work]
+  enable = true
+
+  [[params.work.item]]
+    title = "Consectetur adipisicing"
+    subtitle = "Web Design"
+    img = "images/img_1.jpg"
+
+  [[params.work.item]]
+    title = "Consectetur adipisicing"
+    subtitle = "Web Design"
+    img = "images/img_2.jpg"
+
+  [[params.work.item]]
+    title = "Consectetur adipisicing"
+    subtitle = "Web Design"
+    img = "images/img_3.jpg"
+
+  [[params.work.item]]
+    title = "Consectetur adipisicing"
+    subtitle = "Web Design"
+    img = "images/img_2.jpg"
+
+
+# Team section
+[params.team]
+  enable = true
+  title1 = "Meet The Team"
+  title2 = "Collaborators"
+  title3 = "Alumni"
+
+  [[params.team.item]]
+    name = "Perry de Valpine"
+    position = "Professor"
+    # description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+    img = "images/pdv.jpg"
+    email = "#"
+    telephone = "#"
+    facebook = "#" 
+    twitter = "#"
+    dribbble = "#"
+    instagram = "#"
+    github = "#"
+    linkedin = "#"
+    whatsapp = "#"
+
+  [[params.team.item]]
+    name = "Sally Paganin"
+    position = "Postdoc"
+    #description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+    img = "images/q.png"
+    email = "#"
+    telephone = "#"
+    facebook = "#"
+    twitter = "#"
+    dribbble = "#"
+    instagram = "#"
+    github = "#"
+    whatsapp = "#"
+
+  [[params.team.item]]
+    name = "Ben Goldstein"
+    position = "Ph.D. Student - ESPM"
+    #description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+    img = "images/me.jpg"
+    email = "#"
+    telephone = "#"
+    facebook = "#"
+    twitter = "#"
+    dribbble = "#"
+    instagram = "#"
+    github = "#"
+    whatsapp = "#"
+    orcid = "#"
+
+  [[params.team.item]]
+    name = "Sara Stoudt"
+    position = "Ph.D. Student - Statistics"
+    #description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+    img = "images/Sara.jpg"
+    email = "#"
+    telephone = "#"
+    facebook = "#"
+    twitter = "#"
+    dribbble = "#"
+    instagram = "#"
+    github = "#"
+    whatsapp = "#"
+    
+  [[params.team.item]]
+    name = "Johnny Hong"
+    position = "Ph.D. Student - Statistics"
+    #description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+    img = "images/01_Johnny.JPG"
+    email = "#"
+    telephone = "#"
+    facebook = "#"
+    twitter = "#"
+    dribbble = "#"
+    instagram = "#"
+    github = "#"
+    whatsapp = "#"
+
+  [[params.team.collab]]
+    name = "Carl Boettiger"
+    position = "Professor - UC Berkeley, ESPM"
+    website = "https://www.carlboettiger.info/"
+  [[params.team.collab]]
+    name = "Will Fithian"
+    position = "Professor - UC Berkeley, Statistics"
+    website = "https://www.stat.berkeley.edu/~wfithian/"
+  [[params.team.collab]]
+    name = "Chris Paciorek"
+    position = "Professor"
+    website = "https://www.stat.berkeley.edu/users/paciorek/"
+  
+  [[params.team.alum]]
+  name = "Dao Nguyen"  
+  link = "https://math.olemiss.edu/dao-nguyen/"
+  [[params.team.alum]]
+  name = "Daniel Turek"
+  link = "https://math.williams.edu/profile/dbt1/"
+  [[params.team.alum]]
+  name = "Cliff Anderson-Bergman"
+  link = "https://cliffstats.weebly.com/"
+  [[params.team.alum]]
+  name = "Melissa Eitzel"
+  link = "https://mveitzel.org/"
+  [[params.team.alum]]
+  name = "Julie Jedlicka"
+  link = "https://www.missouriwestern.edu/biology/dr-julie-jedlicka/"
+  [[params.team.alum]]
+  name = "Katherine Scranton"
+  link = "http://www.katiescranton.com/"
+  [[params.team.alum]]
+  name = "Jonas Knape"
+  link = "https://internt.slu.se/en/cv-originals/jonas-knape/"
+  [[params.team.alum]]
+  name = "Viorel Popescu"
+  link = "https://vioreldpopescu.com/"
+  [[params.team.alum]]
+  name = "Karthik Ram"
+  link = "http://karthik.io/"
+
+
+# Contact section
+[params.contact]
+  enable = true
+  title = "Get In Touch"
+  message = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+  name_placeholder = "Your name"
+  email_placeholder = "Your email"
+  email_disclaimer = "We'll never share your email with anyone else."
+  message_placeholder = "Please enter a message."
+  button_text = "Submit"
+
+# Footer section
+# Note here that the copyright and attribution statement must remain as part of the license agreement. If you wish to remove this, please contact freehtml5 and pay for a professional license.
+[params.footer]
+  enable = true
+  note = "<p><small>&copy; 2016 Free HTML5 Template. All Rights Reserved. <br> Designed by <a href='http://freehtml5.co/' target='_blank'>FreeHTML5.co</a> Demo Images: <a href='http://pexels.com/' target='_blank'>Pexels</a><br>Hugo port by <a href='https://github.com/SteveLane/' target='_blank'>SteveLane</a></small></p>"
+  github = "http://github.com/perrydv"
+  #twitter = "#"
+  #facebook = "#"
+  #vine = "#"
+  #linkedin = "#"
+  #instagram = "#"
+  
